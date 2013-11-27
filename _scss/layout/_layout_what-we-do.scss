@@ -1,0 +1,38 @@
+//What We Do Components 
+	.what-we-do-display{
+
+		.projects {
+			@include pad($gutter $gutter $gutter * 2 $gutter);
+			.content{
+				@include outer-container;
+			}
+			.research, .support-music, .museum{
+				@include span-columns(12);
+				@include media($medium){
+					@include span-columns(4);
+				}
+			}
+		}
+		
+		.namm-show {
+			@include outer-container;
+			.museum {
+				@include span-columns(12);
+				@include media($medium){
+					@include span-columns(6);
+				}
+			}
+		}
+
+		.partners {
+			.content {
+				@include outer-container;
+			}
+		}
+		
+		.donate {
+			.content {
+				@include outer-container;
+			}
+		}
+	}

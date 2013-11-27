@@ -1,0 +1,7 @@
+.comments {
+	min-height: 400px;
+	background: $lightest-grey;
+	@include pad($gutter);
+	margin-bottom: $gutter;
+	text-align: center;
+}

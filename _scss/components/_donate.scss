@@ -1,0 +1,22 @@
+.what-we-do-display {
+	.donate {
+		background: $text;
+		text-align: center;
+		.content {
+			color: white;
+			@include pad($gutter);
+		}
+		.section-title{
+			color: white;
+			@extend %section-title;
+			margin-bottom: 1em;
+		}
+		.summary{
+			margin: 0 0 $gutter 0;
+			font-size: 1.5em;
+			@include media($large){
+				padding: 0 $gutter * 2;
+			}
+		}
+	}
+}	

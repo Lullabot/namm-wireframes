@@ -1,0 +1,14 @@
+img {max-width:100%; height: auto}
+
+//for wireframing only
+.wf-label{
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	padding: $gutter;
+}
+
+.button{
+	@include button;
+	font-size: 1em;
+}

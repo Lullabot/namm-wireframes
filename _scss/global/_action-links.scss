@@ -1,0 +1,35 @@
+.content,
+.main-content {
+
+  .action-link {
+    font-weight: bold;
+    display: inline-block;
+    margin: 1em 0;
+    &:before {
+      content: '→ ';
+      margin-right: .5em;
+      font-weight: bold;
+    }
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    padding: .5em $gutter;
+    background: $blue;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    &:hover {
+      background: $charcoal;
+    }
+  }
+  
+}
+
+.what-we-do-display {
+  .donate {
+    .action-link {
+      color: white;
+    }
+  }
+}

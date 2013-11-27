@@ -1,0 +1,10 @@
+.affiliate-spotlight {
+  .teaser-image {
+    margin-bottom: $gutter * .5;
+    @include media(25em){ 
+      @include span-columns(3 of 6);
+      float: right;
+      margin-left: $gutter;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.global-header {
+  
+  background: $lightest-grey;
+  
+  .home-display &,
+  .what-we-do-display & {
+    background: transparent;
+  }
+  
+}

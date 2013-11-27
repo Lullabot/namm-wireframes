@@ -1,0 +1,19 @@
+.impact-spotlight {
+  
+  padding: $gutter;
+  background: $lightest-grey;
+  
+  blockquote {
+    padding: 0;
+    margin: 0;
+    p {
+      font-style: italic;
+    }
+  }
+  
+  .attribution {
+    font-size: .875em;
+    font-style: normal;
+  }
+  
+}

@@ -1,0 +1,30 @@
+.event-feature {
+  .component-title {
+    @extend %section-title;
+    text-align: left;
+  }
+  .date,
+  .hour {
+    display: block;
+  }
+  .date {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.3em;
+    font-family: $serif;
+    color: $charcoal;
+  }
+  .hour {
+    font-size: .875em;
+    color: $text-dark;
+  }
+  .location {
+    color: $text-dark;
+    label {
+      font-weight: bold;
+    }
+  }
+  .action-link {
+    margin-left: $gutter;
+  }
+}

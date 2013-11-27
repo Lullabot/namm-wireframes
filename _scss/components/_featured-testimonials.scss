@@ -1,0 +1,35 @@
+.featured-testimonials{
+	@include pad($gutter $gutter $gutter * 2 $gutter);
+	.section-title{
+		@extend %section-title;
+	}
+	.testimonial-list{
+		padding: 0;
+	}
+	.featured-testimonial-item{
+		margin-bottom: $gutter;
+		@include media($large){
+			margin-bottom: $gutter * 2;
+		}
+		text-align: center;
+		@include media($medium){
+			text-align: left;
+		}
+		.featured-image{
+			@include media($large){
+				@include span-columns(6);
+			}
+		}
+		.featured-link-text{
+			@include media($large){
+				@include span-columns(6);
+			}
+			h2{
+				font-size: 1.25em;
+			}
+			.summary{
+				margin-top: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,95 @@
+.blog-highlights {
+	padding: $gutter;
+	@include outer-container;
+	@include media($max-width){
+		padding: $gutter * 2 0;
+	}
+	
+	.section-title {
+  	text-align: center;
+  	font-size: 1.5em;
+    margin-bottom: 1em;
+    @include media($medium){
+      font-size: 1.75em;
+    } 
+	}
+	
+	.tabs {
+  	padding: 0;	
+  	text-align: left;
+  	li {
+  		list-style: none;
+  		@include inline-block();
+      margin: 0 1em 1em 0;
+      font-size: .9em;
+  		&:last-child {
+  			margin-right: 0;
+  		}
+  
+  		&.active {
+  			@include button(pill);
+        font-size: .9em;
+  		}
+  		&.active a {
+  			color: white;
+  		}	
+  	}
+  }
+  
+  .posts-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .post {
+  	@include pad($gutter);
+  	@include span-columns(12);
+  	list-style: none;
+  	border: solid 2px $border-light;
+    margin-bottom: $gutter;
+  	@include clearfix;
+  	
+  	@include media($medium) {
+  	  @include pad($gutter 0 0 0); 
+      @include span-columns(4);
+  	  @include omega(3n);
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+  	}
+  	
+  	.teaser-image {
+    	float: right;
+    	border-radius: 50%;
+    	max-width: 30%;
+    	height: auto;
+      margin: (0 0 $gutter 1em)
+  	}
+  	p {
+  		padding: 0;
+  		margin: 0;
+  		font-size: 1em;
+  	}
+  	time{
+      font-size: .8em;
+    } 
+
+    .item-title {
+    	font-size: 1.125em;
+      margin-top: 0;
+  	}
+  }
+  
+}
+
+.blog-display .blog-highlights{
+  padding: 0;
+  margin: 0;
+  @include clearfix;
+  .post{
+    @include span-columns(4 of 4);
+    &:first-child{
+      border-top: none;
+    }
+  }
+}

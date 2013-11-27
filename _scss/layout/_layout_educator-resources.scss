@@ -1,0 +1,40 @@
+.educator-resources-display{
+	.component{
+		margin-top: 0;
+	}
+	.content-primary{
+		padding-right: $gutter;
+		@include media($medium){
+			padding-right: 0;
+		}
+	}
+
+	.support-music{
+		@include clearfix;
+		.featured-link{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(6);
+			}
+		}
+		.educator-links{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(6);
+				@include omega();
+			}
+		}
+	}
+
+	.teaching-tools{
+		@include clearfix;
+		.educator-links{
+			@include span-columns(12);
+			@include media($medium){
+				
+			}
+		}
+	}	
+
+}
+

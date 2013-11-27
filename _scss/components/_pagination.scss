@@ -1,0 +1,15 @@
+.pagination{
+	&.component{
+		margin-bottom:0;
+	}
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	li{
+		@include inline-block;
+		margin-right: 1em;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}

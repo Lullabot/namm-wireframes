@@ -1,0 +1,38 @@
+---
+title: Project
+layout: default
+layout_type: one-sidebar
+display: project
+active: "what we do"
+---
+
+<article class="main-content">
+
+  <div class="content-primary">
+  
+    <header class="article-header">
+      <h1 class="article-title">Support Music</h1>
+      <h2 class="subtitle">Music and the arts are vital to every child's education!</h2>
+    </header> <!-- /.article-header -->
+    
+    {% include components/share-links.html %}
+    
+    <div class="article-body">
+    	
+    	<p class="summary">SupportMusic provides tools and resources to advance community support for music education. You CAN make a difference!</p>
+    	
+    	{% include components/support-music-resources.html %}
+    	
+    	{% include components/join-coalition.html %}
+    
+    </div> <!-- /.article-body -->
+  
+  </div> <!-- /.content-primary -->
+  
+  <aside role="complementary" id="sidebar" class="content-secondary">
+    {% include components/from-the-blog.html %}
+    {% include components/impact-spotlight.html %}
+    {% include components/stat-highlight.html %}
+  </aside> <!-- /.content-secondary -->
+
+</article> <!-- /.main-content -->

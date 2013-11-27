@@ -1,0 +1,131 @@
+body {
+  font-family: $sans-serif;
+  line-height: 1.65;
+  color: $text;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans-serif;
+  line-height: 1.45;
+  color: $charcoal;
+  margin-top: 1em;
+  margin-bottom: .25em;
+  @include transition (font-size 0.25s ease-in 0s);
+}
+
+p {
+  margin: 1em 0;
+}
+
+  h1{
+    font-size: 1.75em;
+    &:first-child {
+      margin-top: 0;
+    }
+  }  
+
+  h2{
+    font-size: 1.25em;
+  }
+
+  h3{
+    font-size: 1.125em;
+  }
+
+  h4{
+    font-size: 1em;
+  }
+
+  h5{
+    font-size: 1em;
+  }
+
+  h6{
+    font-size: 1em;
+  }
+
+//Make header sizes larger for larger resolutions
+@include media($medium){
+  h1{
+    font-size: 2.3em;
+    letter-spacing: -.035em;
+    &:first-child {
+      margin-top: 0;
+    }
+  }  
+
+  h2{
+    font-size: 1.5em;
+  }
+
+  h3{
+    font-size: 1.25em;
+  }
+
+  h4{
+    font-size: 1.125em;
+  }
+
+  h5{
+    font-size: 1.125em;
+  }
+
+  h6{
+    font-size: 1em;
+  }
+}
+
+
+
+
+
+a {
+  color: $blue;
+  text-decoration: none;
+  @include transition (color 0.25s ease-in 0s);
+  &:hover {
+    color: $charcoal;
+    @include transition (color 0.25s ease-in 0s);
+  }
+}
+
+strong {
+  color: $text-dark;
+}
+
+hr {
+  border: 0;
+  background: $border-light;
+  height: 1px;
+  margin: 2em 0;
+}
+
+
+//Typography Extends
+%section-title {
+  text-align: center;
+  margin: .8em 0 $gutter * .5 0;
+  font-size: 1.75em;
+}
+
+//////////////////////
+// Highlight Colors //
+//////////////////////
+
+::selection {
+  background: $blue;
+  color: white;
+}
+
+::-moz-selection {
+  background: $blue;
+  color: white;
+}
+
+::-webkit-selection {
+  background: $blue;
+  color: white;
+}
+
+

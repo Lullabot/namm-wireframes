@@ -1,0 +1,29 @@
+.global-header {
+	
+	.header-content {
+  	@include outer-container;
+	
+  	.logo {
+  		@include span-columns(12);
+  		@include pad(1em $gutter .5em $gutter);
+  	}
+  	
+  	.global-nav {
+  		@include span-columns(12);
+  	}
+  	
+  	@include media($nav-collapse) {
+  	  @include outer-container;
+  	  @include pad(1em $gutter);
+  	  .logo {
+  			@include span-columns(2);
+  			padding: 0;
+  		}
+  		.global-nav {
+  			@include span-columns(10);
+  			@include omega();
+  		}
+  	}
+	}
+	
+}

@@ -1,0 +1,64 @@
+.your-community-display{
+	.community-spotlight{
+		@include pad($gutter);
+		.content{
+			@include outer-container;
+		}
+		.community-spotlight-list{
+			@include clearfix;
+			li{
+				@include media($medium){
+					@include span-columns(3);
+					@include omega(4n);
+				}
+			}
+		}
+	}
+
+	.locator{
+		@include pad($gutter);
+		.content{
+			@include outer-container;
+		}
+		.member-locator{
+			@include media($medium){
+				@include span-columns(6);
+			}
+		}
+		.lesson-locator{
+			@include media($medium){
+				@include span-columns(6);
+			}
+		}
+	}
+
+	.support-music{
+		@include pad($gutter);
+		.content{
+			@include outer-container;
+		}
+		.resource{
+			
+			@include media($medium){
+				@include span-columns(4);
+				@include omega(3n);
+			}
+		}
+	}
+
+	.best-communities{
+		@include pad($gutter);
+		.content{
+			@include outer-container;
+		}
+		.best-communities-list{
+			@include clearfix;
+			li{
+				@include media($medium){
+					@include span-columns(3);
+					@include omega(4n);
+				}
+			}
+		}
+	}
+}

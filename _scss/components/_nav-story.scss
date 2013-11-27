@@ -1,0 +1,61 @@
+.story-nav {
+	
+	@include pad($gutter * 2 $gutter $gutter $gutter);
+	background: $text-dark;
+	
+	.content {
+  		@include outer-container;
+	}
+	
+	.intro {
+		color: white;
+		text-align: center;
+		font-weight: bold;
+		line-height: 1.5;
+		font-size: 1.5em;
+		@include media($medium){
+			font-size: 2.3em;
+		}
+	}
+	
+	&:after {
+		position: relative;
+		top: 78px;
+		left: 48%;
+		@include triangle(60px, $text-dark, down);
+		content: ' ';
+	}
+}
+
+.story-nav-list {
+	margin-top: $gutter;
+	padding: 0;
+	text-align: center;
+	background: $text-dark;
+	&.stuck {
+		@include media($medium){
+			position:fixed;
+			width: 100%;
+			left: 0;
+			top: -$gutter;
+			padding: $gutter 0;
+			z-index: 1000;
+		}
+	}
+	li {
+		@include inline-block;
+		font-size: 1.125em;
+		&:last-child{
+			margin-right: 0
+		}
+		a {
+			padding: .3em $gutter / 2;
+			color: $lightest-grey;
+			&:hover{
+				color: $text;
+				background: $border-light;
+				@include border-radius(20px);
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+.sub-nav{
+	border: solid 2px $lightest-grey;
+    display: block; 
+	padding: 1em;
+	margin: 0 0 $gutter 0;
+	list-style: none;
+	li{
+		display: block;
+		@include media($nav-collapse){
+			@include inline-block;
+		}
+		&:first-child{
+			margin-right: 1em;
+			font-weight: bold;
+		}
+	}
+
+	.sub-nav-links{
+		display: none;
+		@include media($nav-collapse){
+			@include inline-block;
+		}
+		&.open{
+			display: block;
+			@include media($nav-collapse){
+				@include inline-block;
+			}
+		} 
+	}
+
+	.sub-nav-links ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	.sub-nav-links ul li{
+		font-weight: normal;
+		margin: 0;
+		padding: .5em 0;
+		border-bottom: solid 1px $border-light;
+		&:last-child{
+			margin-bottom: 0;
+			border-bottom: 0;
+		}
+		@include media($nav-collapse){
+			@include inline-block;
+			border: none;
+			margin: 0 1em 0 0;
+			padding: 0;
+		}
+	}
+
+	.sub-nav-toggle{
+		@include media($nav-collapse){
+			display: none;
+		}
+		float: right;
+	}
+}
+
+//extend for section displays
+%sub-nav-section-display{
+	@include outer-container;
+	@include media($large){
+		max-width: $large;
+		margin: 0 auto;
+		margin-top: $gutter;
+		text-align: center;
+	}
+}
+
+.why-music-matters-display{
+	.sub-nav{
+		@extend %sub-nav-section-display;
+	}
+}
+
+.what-we-do-display{
+	.sub-nav{
+		@extend %sub-nav-section-display;
+	}
+}

@@ -1,0 +1,41 @@
+.community-spotlight {
+  .content {
+    @include outer-container;
+  }
+  .section-title {
+    margin-bottom: .5em;
+  }
+	blockquote {
+		margin: 0;
+		padding: 0 $gutter * .5 $gutter;
+		p {
+			font-style: italic;
+			font-size: 1.5em;
+			font-family: $serif;
+		}
+		.attribution {
+			font-size: .875em;
+		}
+	}
+}
+
+@include media($medium) {
+
+  .community-spotlight {
+    text-align: center;
+    blockquote {
+      padding: 0 $gutter * 2 $gutter;
+    }
+  }
+
+}
+
+@include media($large) {
+
+  .community-spotlight {
+    blockquote {
+      padding: 0 $gutter * 4 $gutter;
+    }
+  }
+
+}

@@ -1,0 +1,55 @@
+.what-we-do-display{
+
+	.projects {
+			
+			.intro {
+				margin: 2em 0 2em 0;
+				text-align: center;
+				padding: 0;
+				font-size: 1.5em;
+				font-weight: bold;
+				color: $charcoal;
+				@include media($medium){
+					padding: 0 $gutter;
+				}
+				@include media($max-width){
+					padding: 0 $gutter * 2;
+				}
+			}
+			.projects-list {
+	  			margin: 0;
+	  			padding: 0;
+	  			li {
+	    			list-style: none;
+	  			}
+			}
+
+			.research, .support-music, .museum{
+				padding: 0;
+				margin-bottom: $gutter;
+				@include media($medium){
+					margin-bottom: 0;
+				}
+				.component-title{
+					font-size: 1.25em;
+					margin-bottom: $gutter;
+					text-align: center;
+				}
+
+
+				.description, .featured-image{
+					@media screen and (min-width: $small + 10em) and (max-width: $medium){
+						@include span-columns(6);
+						.summary{
+							margin-top: 0;
+						}
+					}
+				}
+
+				.research-links, .support-music-links{
+					padding: 0;
+				}
+			}
+		}
+		
+}

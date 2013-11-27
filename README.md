@@ -1,4 +1,4 @@
-namm-wireframes
+namm-foundation
 ===============
 
-A repository to show the wireframes only so that we can keep them separate and viewable while working on the styled versions.
+The repository for the NAMM Foundation redesign process.

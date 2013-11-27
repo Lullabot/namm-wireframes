@@ -1,0 +1,30 @@
+.what-we-do-display{
+	.partners {
+		background: $lightest-grey;
+		@include pad($gutter $gutter $gutter * 2 $gutter);
+	}
+	
+	.section-title{
+		@extend %section-title;
+	}
+
+	.partners-list{
+		padding: 0;
+		margin: 0;
+		.featured-partner{
+			border-top: solid 2px $border-light;
+			@include span-columns(12);
+			margin-bottom: $gutter;
+			@include media($medium){
+				@include span-columns(3);
+				@include omega(4n);
+			}
+		}
+		h2{
+			font-size: 1.125em;
+		}
+		.summary{
+			margin-top: 0;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.get-involved-display{
+	.content-primary .component{
+		margin-top: 0;
+	}
+	.content-primary{
+		padding-right: $gutter;
+		@include media($medium){
+			padding-right: 0;
+		}
+	}
+	
+	.support-music-coalition{
+		@include pad(0 0 $gutter 0);
+	}
+	.webcast{
+		@include pad(0 0 $gutter 0);
+		@include clearfix;
+		.featured-video{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(6);
+			}
+		}
+		.other-webcasts{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(6);
+				@include omega();
+			}
+		}
+	}
+	.partner-spotlight{
+		@include clearfix;
+		@include pad(0 0 $gutter 0);
+		.featured-link{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(6);
+			}
+		}
+		.partner-links{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(6);
+				@include omega();
+			}
+		}
+	}
+	.donor-spotlight{
+		@include clearfix;
+		@include pad(0 0 $gutter 0);
+		.impact-spotlight{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(6);
+			}
+		}
+	}
+}

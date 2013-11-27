@@ -1,0 +1,46 @@
+.why-music-matters-display{
+
+	.featured-testimonials{
+
+		.content{
+			@include outer-container;
+		}
+		.featured-testimonial-item{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(6);
+				@include omega(2n);
+			}
+		}
+	}	
+
+	.featured-statistics{
+		.content{
+			@include outer-container;
+		}
+		.featured-stat-item{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(4);
+				@include omega(3n);
+			}
+		}
+	}
+
+	.why-play-music-research{
+		@include outer-container;
+		.why-play-music{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(6);
+			}
+		}
+		.featured-research{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(6);
+			}
+		}
+	}
+
+}

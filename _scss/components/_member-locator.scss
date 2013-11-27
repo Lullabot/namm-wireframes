@@ -1,0 +1,20 @@
+.member-locator {
+	margin-bottom: $gutter;
+	@include clearfix;
+	.component-title {
+		@include clearfix;
+		@extend %section-title;
+	}
+}
+
+@include media($medium) {
+
+  .locator-coalition {
+    .member-locator {
+      @include span-columns(6);
+      @include omega;
+      padding: $gutter $gutter * 2;
+    }
+  }
+
+}

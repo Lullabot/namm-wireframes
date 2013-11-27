@@ -1,0 +1,47 @@
+.join-coalition {
+  
+  .content-primary & {
+    padding: $gutter * 2;
+    background: $lightest-grey;
+  }
+  
+  .component-title {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  
+}
+
+.get-involved-display .join-coalition{
+	padding: $gutter;
+}
+
+.locator-coalition {
+  .join-coalition {
+    .component-title {
+      @extend %section-title;
+      @include clearfix;
+    }
+  }
+}
+
+@include media($medium) {
+
+  .locator-coalition {
+    .content {
+      @include outer-container;
+    }
+    .component-title {
+      text-align: left;
+    }
+    @include clearfix;
+    .join-coalition {
+      @include span-columns(6);
+      padding: $gutter $gutter * 2;
+    }
+    .join-coalition {
+      @include omega;
+    }
+  }
+
+}

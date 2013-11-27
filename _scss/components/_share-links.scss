@@ -1,0 +1,7 @@
+.share-links {
+	@include pad(.1em $gutter);
+	background: $lightest-grey;
+	p {
+		text-align: center;
+	}
+}

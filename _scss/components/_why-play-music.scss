@@ -1,0 +1,21 @@
+.why-play-music{
+	@include pad($gutter);
+	.section-title{
+		@extend %section-title;
+	}
+	.summary{
+		text-align: center;
+	}
+	.age-groups{
+		margin: $gutter 0 0 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		li{
+			padding: .5em 1em;
+			margin: 1em 0em 0 0;
+			@include inline-block;
+			background: $lightest-grey;
+		}
+	}
+}

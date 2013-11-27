@@ -1,0 +1,19 @@
+.content-primary {
+	
+	@include pad($gutter * 2 $gutter 0 $gutter);
+
+	.article-body {
+		@include pad($gutter 0);
+		h2 {
+  			
+		}
+	}
+
+	.section-title{
+      font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+}
+

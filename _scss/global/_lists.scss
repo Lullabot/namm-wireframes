@@ -1,0 +1,17 @@
+.resources-list {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    margin: $gutter * .5 0;
+    padding: $gutter 0 $gutter * .25;
+    border-top: 2px solid $lightest-grey;
+    &:first-child {
+      border-top: none;
+    }
+  }
+  .item-title {
+    font-size: 1.25em;
+    margin: 0;
+  }
+}

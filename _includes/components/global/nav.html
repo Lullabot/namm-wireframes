@@ -1,0 +1,22 @@
+<nav role="navigation" id="nav" class="global-nav">
+  <ul class="nav-list">
+    <li>
+      <a {% if page.active == "what we do" %}class="active"{% endif %} href="what-we-do.html">What We Do</a>
+    </li>
+    <li>
+      <a {% if page.active == "why music matters" %}class="active"{% endif %} href="why-music-matters.html">Why Music Matters</a>
+    </li>
+    <li>
+      <a {% if page.active == "community" %}class="active"{% endif %} href="your-community.html">Community</a>
+    </li>
+    <li class="small">
+      <a {% if page.active == "for educators" %}class="active"{% endif %} href="educator-resources.html">For Educators</a>
+    </li>
+    <li class="small">
+      <a {% if page.active == "blog" %}class="active"{% endif %} href="blog.html">Articles &amp; News</a>
+    </li>
+    <li class="small">
+      <a {% if page.active == "get involved" %}class="active"{% endif %} href="get-involved.html">Get Involved</a>
+    </li>
+  </ul>
+</nav>

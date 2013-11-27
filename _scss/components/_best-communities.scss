@@ -1,0 +1,23 @@
+.best-communities {
+  .map-image {
+    margin-bottom: $gutter;
+  }
+}
+
+@include media($medium) {
+
+  .best-communities {
+  	
+  	.map-image,
+  	.best-communities-info {
+    	@include span-columns(6);
+    	padding: $gutter * .5;
+  	}
+  	.best-communities-info {
+    	@include omega;
+  	}
+  	
+  }
+
+}
+

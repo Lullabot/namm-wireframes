@@ -1,0 +1,6 @@
+site_name: 'NAMM Foundation'
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+permalink: /blog/:title
+baseurl: http://namm.dev

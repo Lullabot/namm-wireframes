@@ -1,0 +1,28 @@
+form {
+  
+  label {
+    font-weight: bold;
+    margin-right: .5em;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="url"] {
+    vertical-align: middle;
+  }
+  
+}
+
+
+
+@include media($medium) {
+  
+  form {
+ 
+    label {
+      display: inline;
+    }
+    
+  }
+  
+}

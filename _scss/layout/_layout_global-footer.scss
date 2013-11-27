@@ -1,0 +1,19 @@
+.global-footer{
+	@include outer-container;
+	@include pad($gutter);
+	.nav-footer{
+		.logo{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(2);
+			}
+		}
+		.nav-list{
+			@include span-columns(12);
+			@include media($medium){
+				@include span-columns(10);
+				@include omega;
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.personas-nav {
+	
+	@include outer-container;
+	margin: 0 $gutter;
+	margin-top: -30px;
+	
+	@include media($max-width){
+		padding:0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	ul {
+  	margin: 0;
+  	padding: 0;
+	}
+	
+	a {
+  	color: white;
+  	&:hover {
+  		color: $charcoal;
+  	}
+  	&:before{
+			content: '+';
+			margin-right: 1em;
+		}
+  }
+	
+	li {
+		background: $text-light;
+		color: white;
+		border-top: solid 1px $text-light;
+		border-bottom: solid 1px $border-light;
+		padding: $gutter * .5;
+		text-align: left;
+		@include span-columns(12);
+		@include media($medium){
+			@include span-columns(4);
+			text-align: center;
+			border: none;
+		}
+		
+		&:last-child{
+			border:none;
+		}
+		
+		
+	}
+}

@@ -1,0 +1,14 @@
+.featured-research{
+	@include pad($gutter);
+	.section-title{
+		@extend %section-title;
+	}
+
+	.summary{
+		text-align: center;
+	}
+
+	.more-link{
+		margin-top: $gutter;
+	}
+}

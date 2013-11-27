@@ -1,0 +1,4 @@
+.component-callout {
+  @include pad($gutter);
+	background: $lightest-grey;
+}

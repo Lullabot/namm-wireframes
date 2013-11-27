@@ -1,0 +1,60 @@
+.article-header {
+  
+  .article-title {
+    .project-display & {
+      margin-bottom: 0;
+    }
+  }
+  
+  .subtitle {
+    margin-top: 0;
+    margin-bottom: $gutter;
+  }
+  
+}
+
+.component {
+  .content-primary & {
+    margin: $gutter 0;
+  }
+}
+
+.summary {
+  .article-body & {
+    font-size: 1.25em;
+    color: $text-dark;
+  }
+}
+
+.download-link {
+  display: inline-block;
+  font-weight: bold;
+  padding: .5em 1.25em;
+  background: $lightest-grey;
+  &:before {
+    content: '↓';
+    font-weight: bold;
+    margin-right: .5em;
+  }
+}
+
+.more-link{
+  display: block;
+  clear: both;
+  text-align: center;
+  background: $lightest-grey;
+  max-width: 20em;
+  padding: .5em 1em;
+  margin: 0 auto;
+}
+
+.pullquote {
+  .content-primary & {
+    padding: 0;
+    padding-left: $gutter;
+    margin: $gutter * 1.25 0;
+    font-size: 1.75em;
+    font-style: italic;
+    border-left: 5px solid $text-dark;
+  }
+}

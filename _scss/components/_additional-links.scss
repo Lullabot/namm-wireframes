@@ -1,0 +1,24 @@
+.additional-links {
+	padding: $gutter;
+	margin-bottom: $gutter;
+	background: $lightest-grey;
+	
+	.component-title {
+		margin: 0;
+		font-size: 1.25em;
+	}
+	
+	ul {
+		margin: 0;
+		list-style: none;
+		padding: 0;
+		li {
+			padding: .5em 0; 
+			border-bottom: solid 1px $border-light;
+			&:last-child {
+				border-bottom: none;
+			} 
+		}
+	}
+	
+}

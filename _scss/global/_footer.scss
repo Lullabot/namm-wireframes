@@ -1,0 +1,48 @@
+.global-footer{
+	.nav-footer{
+		padding-bottom: $gutter;
+		@include media($medium){
+			padding: $gutter 0;
+		}
+		.logo{
+			padding-bottom: 1em;
+			img{
+				max-width: 100px;
+				vertical-align: top;
+			}
+		}	
+		.nav-list{
+			padding: 0;
+			margin: 0;
+			li{
+				@include inline-block;
+				margin-right: 1em;
+				font-size: .9em;
+				font-weight: bold;
+				&.small{
+					font-size: .8em;
+					font-weight: normal;
+				}
+			}
+		}
+	}
+	.wireframe-footer{
+		@include clearfix;
+		@include span-columns(12);
+		padding: 0 1em;
+		font-size: .8em;
+		text-align: center;
+		margin-top: 5em;
+		border: solid 2px $lightest-grey;
+		.wireframe-links{
+			padding: 0;
+			li{
+				@include inline-block;
+				margin-right: 1.5em;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

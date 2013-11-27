@@ -1,0 +1,44 @@
+.what-we-do {
+	background: $lightest-grey;
+	@include pad($gutter * 3 $gutter $gutter * 2 $gutter);
+	
+	.content {
+  		@include outer-container;
+  		@include media($medium){
+			.featured-image{
+				@include span-columns(7);
+			}
+			.story-text{
+				@include span-columns(5);
+				padding-left: $gutter;
+			}
+		}
+	}
+
+	.section-title {
+		text-align: center;
+		margin-bottom: $gutter;
+		font-size: 1.75em;
+	}
+
+	h2{
+		font-size: 1.25em;
+		margin-top: 0;
+		@media screen and(max-width: $medium){
+				margin-top: $gutter;
+			}
+	}
+
+	ul{
+		list-style: none;
+		padding: 0;
+
+		li{
+
+		}
+		li:before{
+			content: "\00bb";
+			margin-right: 1em;
+		}
+	}
+}

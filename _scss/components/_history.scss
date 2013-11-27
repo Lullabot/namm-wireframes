@@ -1,0 +1,10 @@
+.what-we-do-display{
+	.history {
+		background: $border-light;
+		.content {
+			color: white;
+			@include pad($gutter);
+			min-height: 500px;
+		}
+	}
+}

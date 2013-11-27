@@ -1,0 +1,51 @@
+---
+title: Blog
+layout: default
+layout_type: one-sidebar
+display: blog
+active: "blog"
+---
+
+<article class="main-content">
+
+  <div class="content-primary">
+  
+    <header class="article-header">
+      <h1 class="article-title">NAMM Foundation Articles &amp; News</h1>
+    </header> <!-- /.article-header -->
+    	<section class="component blog-highlights">
+          <div class="component featured-post">
+            {% include components/post.html %}
+          </div>
+          <ul class="posts-list blog-highlights-list">
+            <li class="post">
+              {% include components/post.html %}
+            </li>
+            <li class="post">
+              {% include components/post.html %}
+            </li>
+            <li class="post">
+              {% include components/post.html %}
+            </li>
+            <li class="post">
+              {% include components/post.html %}
+            </li>
+            <li class="post">
+              {% include components/post.html %}
+            </li>
+            <li class="post">
+              {% include components/post.html %}
+            </li>
+          </ul> <!-- /.blog-highlights-list -->
+      </section>
+      {% include components/pagination.html %}
+  </div> <!-- /.content-primary -->
+  
+  <aside role="complementary" id="sidebar" class="content-secondary">
+    {% include components/categories.html %}
+    {% include components/most-popular-posts.html %}
+    {% include components/impact-spotlight.html %}
+    {% include components/join-coalition-small.html %}
+  </aside> <!-- /.content-secondary -->
+
+</article> <!-- /.main-content -->

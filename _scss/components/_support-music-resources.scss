@@ -1,0 +1,21 @@
+.support-music-resources {
+  .component-title {
+    font-size: 1.5em;
+  }
+}
+
+.your-community-display{
+	.support-music-resources {
+	  .component-title {
+	    display: none;
+	  }
+	}
+	.section-title{
+		@extend %section-title;
+	}
+	.resource{
+		&:first-child{
+			border-top: solid 2px $lightest-grey;
+		}
+	}
+}

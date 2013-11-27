@@ -1,0 +1,33 @@
+.get-involved {
+
+  background: $lightest-grey;
+	@include pad($gutter * 2 $gutter);
+	
+	.content {
+  		@include outer-container;
+	}
+	
+	.section-title {
+		text-align: center;
+		margin-bottom: $gutter;
+		font-size: 1.75em;
+	}
+
+	.story-item{
+		text-align: center;
+		margin-bottom: $gutter * 2;
+		@include media($medium){
+			@include span-columns(4);
+			text-align: left;
+			margin-bottom: 0;
+		}
+	}
+	
+	h2{
+		font-size: 1.25em;
+		margin-bottom: 0;
+	}
+	p{
+		margin-top: 0;
+	}
+}
