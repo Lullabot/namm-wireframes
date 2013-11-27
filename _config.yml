@@ -3,3 +3,4 @@ markdown: rdiscount
 rdiscount:
   extensions: [smart]
 permalink: /blog/:title
+baseurl: /namm-wireframes
