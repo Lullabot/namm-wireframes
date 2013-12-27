@@ -3,4 +3,4 @@ markdown: rdiscount
 rdiscount:
   extensions: [smart]
 permalink: /blog/:title
-baseurl: /
+baseurl: http://lullabot.github.io/namm-wireframes/
